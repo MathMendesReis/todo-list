@@ -1,0 +1,10 @@
+services:
+  db:
+    container_name: tasks_postgres
+    image: postgres
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=tasks_db
+    ports:
+      - 5432:5432
